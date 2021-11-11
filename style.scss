@@ -1,0 +1,112 @@
+$alkaliBlue: rgb(0, 186, 255);
+$royalBlue: rgb(0, 92, 172);
+.logo_wrap{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.logo_title {
+  margin-bottom: 20px;
+  font-family: sans-serif;
+  color:$royalBlue;
+}
+.logo_refresh {
+  margin-top: 20px;
+  font-size: 24px;;
+  font-family: sans-serif;
+  text-decoration: none;
+  color:$royalBlue;
+  border:3px solid darkblue;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.hex_top {
+  fill: $alkaliBlue;
+  animation: rotate 1.5s linear ;
+}
+.hex_bottom_left {
+  fill: $alkaliBlue;
+  animation: rotate2 1.2s linear ;
+}
+.hex_top_right {
+  fill: $alkaliBlue;
+  animation: rotate1 1s linear ;
+}
+.hex_bottom_right {
+  fill: $alkaliBlue;
+  animation: rotate3 1.2s linear;
+}
+@keyframes rotate3 {
+  from {
+    opacity: 0; 
+    fill: rgb(0, 106, 255);
+  }
+  25% {
+    opacity: 1;
+    fill: rgb(0, 186, 255);
+  }
+  75% {
+    opacity: 0.8;
+  }
+  80% {
+    fill: rgb(0, 7, 222);
+  }
+  to {
+    opacity: 1;
+    fill: rgb(0, 186, 255);
+  }
+}
+@keyframes rotate2 {
+  from {
+    opacity: 0; 
+    fill: rgb(0, 106, 255);
+  }
+  25% {
+    opacity: 1;
+    fill: rgb(0, 7, 222);
+  }
+  75% {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+    fill: rgb(0, 186, 255);
+  }
+}
+@keyframes rotate1 {
+  from {
+    opacity: 0; 
+    fill: rgb(0, 106, 255);
+  }
+  25% {
+    opacity: 0.4;
+  }
+  75% {
+    opacity: 0.5;
+    fill: rgb(0, 7, 222);
+  }
+  to {
+    opacity: 1;
+    fill: rgb(0, 186, 255);
+  }
+}
+@keyframes rotate {
+  from {
+    opacity: 0; 
+    fill: rgb(0, 106, 255);
+  }
+  25% {
+    opacity: 0.8;
+    fill: rgb(0, 7, 222);
+  }
+  75% {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+    fill: rgb(0, 186, 255);
+  }
+}
